@@ -1,0 +1,44 @@
+{
+  "name": "@fusionstrings/nginx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --build tsconfig.json",
+    "dev": "tsc --watch",
+    "bundle": "npx rollup lib/http.js --file dist/http.bundle.js --format es --inlineDynamicImports",
+    "rollup": "rollup -c",
+    "pack": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fusionstrings/nginx.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fusionstrings/nginx/issues"
+  },
+  "homepage": "https://github.com/fusionstrings/nginx#readme",
+  "dependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^16.0.0",
+    "@rollup/plugin-node-resolve": "^10.0.0",
+    "@types/react": "^16.9.56",
+    "@types/react-dom": "^16.9.9",
+    "njs-types": "^0.4.4",
+    "rollup": "^2.33.1",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "typescript": "^4.2.0-dev.20201107",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0"
+  }
+}
